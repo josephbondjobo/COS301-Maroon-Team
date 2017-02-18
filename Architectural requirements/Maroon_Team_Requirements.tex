@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{tabu}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage[english]{babel}
+\usepackage{fontspec}
+\usepackage[style=authoryear,backend=biber,sorting=nyt,dashed=false,urldate=long,abbreviate=false]{biblatex}
+\usepackage{float}
+\usepackage{fancyhdr}
+
+\addbibresource{references.bib}
+
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\bfseries Phase 1 Documentation}
+\lfoot{Team Echo}
+\cfoot{COS301 Software Engineering}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+\frenchspacing
+
+\title{\includegraphics[width=12cm]{Eeufeeslogo.jpg} \\
+       Software Requirements Specification \\ 
+       Technology Neutral Process Design \\
+       and \\
+       Architectural Design Specifications\\
+       \vspace{0.5cm}
+       Research Paper Management System \\
+       University of Pretoria \\
+       \vspace{1.0cm}
+       }
+
+\date{} 
+\author{Team Maroon\\
+	\vspace{0.5cm} \\
+	\begin{tabu} to \textwidth { X[l] X[l]}
+		\hline
+		\textbf{Surname, First Name (Initial)}	& \textbf{Student Number}	\\ \hline \hline
+		Bondjobo, Jocelyn (JM)		& 13232852		\\ \hline
+		Mweshi, George (G)			& 16394713		\\ \hline
+		Letsoalo, Joseph (J)		& 15043844		\\ \hline
+		Setoaba, Phuti (P)			& 13032616		\\ \hline
+		Trivella, Camron (C)		& 14070970		\\ \hline
+		15244882, Albert (A)		& 15244882		\\ \hline
+		\hline
+	\end{tabu}}
+
+\DefineBibliographyStrings{english}{%
+urlseen = {\mbox{Accessed} on},
+urlfrom = {[Online]},
+in = {In},
+}
+\DeclareFieldFormat{url}{\bibstring{urlfrom}\space\url{#1}}
+\DeclareFieldFormat{urldate}{\addcomma\space[\bibstring{urlseen}\space#1]}
+\addto\captionsenglish{
+  \renewcommand{\contentsname}
+    {Table of Contents}
+}
+
+\begin{document}
+
+
+\end{document}
