@@ -2,73 +2,186 @@
 
 \usepackage[margin=2cm]{geometry}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
 \usepackage{hyperref}
 \usepackage[all]{hypcap}
-\usepackage{tabu}
-\usepackage[title,titletoc,toc]{appendix}
-\usepackage[english]{babel}
-\usepackage{fontspec}
-\usepackage[style=authoryear,backend=biber,sorting=nyt,dashed=false,urldate=long,abbreviate=false]{biblatex}
-\usepackage{float}
-\usepackage{fancyhdr}
-
-\addbibresource{references.bib}
-
-\setlength{\headheight}{15.2pt}
-\pagestyle{fancy}
-\lhead{}
-\chead{}
-\rhead{\bfseries Phase 1 Documentation}
-\lfoot{Team Echo}
-\cfoot{COS301 Software Engineering}
-\rfoot{Page \thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+\usepackage{listings}
+\lstdefinestyle{TerminalStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+\lstdefinestyle{HtmlStyle}{
+  language=html,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+\lstdefinestyle{OutputStyle}{
+  language=html,
+  basicstyle=\small\sffamily,
+  frame=tb,
+  columns=fullflexible,
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 
-\frenchspacing
-
 \title{\includegraphics[width=12cm]{Eeufeeslogo.jpg} \\
-       Software Requirements Specification \\ 
-       Technology Neutral Process Design \\
-       and \\
-       Architectural Design Specifications\\
-       \vspace{0.5cm}
-       Research Paper Management System \\
+       Department of Computer Science \\
        University of Pretoria \\
-       \vspace{1.0cm}
-       }
+       \vspace{0.5cm}
+       Software Engineering\\
+       COS301 MiniProject \\
+       \vspace{0.5cm}
+       \begin{large}NavUP\end{large}
+}
 
 \date{} 
-\author{Team Maroon\\
-	\vspace{0.5cm} \\
-	\begin{tabu} to \textwidth { X[l] X[l]}
-		\hline
-		\textbf{Surname, First Name (Initial)}	& \textbf{Student Number}	\\ \hline \hline
-		Bondjobo, Jocelyn (JM)		& 13232852		\\ \hline
-		Mweshi, George (G)			& 16394713		\\ \hline
-		Letsoalo, Joseph (J)		& 15043844		\\ \hline
-		Setoaba, Phuti (P)			& 13032616		\\ \hline
-		Trivella, Camron (C)		& 14070970		\\ \hline
-		15244882, Albert (A)		& 15244882		\\ \hline
-		\hline
-	\end{tabu}}
-
-\DefineBibliographyStrings{english}{%
-urlseen = {\mbox{Accessed} on},
-urlfrom = {[Online]},
-in = {In},
-}
-\DeclareFieldFormat{url}{\bibstring{urlfrom}\space\url{#1}}
-\DeclareFieldFormat{urldate}{\addcomma\space[\bibstring{urlseen}\space#1]}
-\addto\captionsenglish{
-  \renewcommand{\contentsname}
-    {Table of Contents}
+\author{Bondjobo, Jocelyn (J) 13232852 			\\
+		Mweshi, George (G)		16394713		\\
+		Letsoalo, Joseph (J)	15043844		\\
+		Setoaba, Phuti (P)		13032616		\\
+		Trivella, Camron (C)	14070970		\\
+		Coetzer, Albert (A)		15244882		\\
 }
 
 \begin{document}
+\maketitle
+\thispagestyle{empty}
+\clearpage
 
+\newpage
+\pagenumbering{roman}
+\thispagestyle{empty}
+\tableofcontents
+\clearpage
+
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+The client Vreda Pieterse, from the University of Pretoria has requested a system called NavUp to guide students. Students and visitors to the the campus often have to find venues to attend classes, meetings and other events or to find public services such as shops, restaurants and ablution facilities. They may want to determine the optimal route from one venue to another on a regular basis, especially at the beginning of a term when classes are presented for the first time.
+The most important requirements as set out by the client are:
+\begin{enumerate}
+\item Basic functionality
+\item Surveillance
+\item Targeted delivery of information
+\item Activities
+\end{enumerate}
+
+\section{Background}
+
+\section{Architecture requirements}
+\subsection{Access channel requirements}
+\subsubsection{Human Access Channels}
+
+\subsubsection{System Access Channels}
+
+\subsection{Quality requirements}
+\subsubsection{Performance}
+\begin{enumerate}
+\item \textbf{Description} \\
+
+\item \textbf{Justification} \\
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Reliability}
+\begin{enumerate}
+\item \textbf{Description} \\
+
+\item \textbf{Justification} \\ 
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Scalability}
+\begin{enumerate}
+\item \textbf{Description} \\
+
+\item \textbf{Justification} \\
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Security}
+\begin{enumerate}
+\item \textbf{Description} \\
+
+\item \textbf{Justification} \\
+
+\item \textbf{Requirements}
+
+\end{enumerate}
+\subsubsection{Flexibility}
+\begin{enumerate}
+\item \textbf{Description} \\
+\item \textbf{Justification} \\
+
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Maintainability}
+\begin{enumerate}
+\item \textbf{Description} \\
+\item \textbf{Justification} \\
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Auditability/Monitorability}
+\begin{enumerate}
+\item \textbf{Description} \\
+\item \textbf{Justification} \\
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Integrability}
+\begin{enumerate}
+\item \textbf{Description} \\
+\item \textbf{Justification} \\
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Cost}
+\begin{enumerate}
+\item \textbf{Description} \\
+\item \textbf{Justification} \\
+\item \textbf{Requirements}
+\end{enumerate}
+\subsubsection{Usability}
+\begin{enumerate}
+\item \textbf{Description} \\
+\item \textbf{Justification} \\
+\item \textbf{Requirements}
+\end{enumerate}
+
+\subsection{Integration requirements}
+
+\subsection{Architecture constraints}
+
+\subsubsection{Architectural Patterns}
+
+\clearpage
+\section{Open Issues}
+\subsection {GitHub Repository}
+Team Maroon Repository: \url{https://github.com/josephbondjobo/COS301-Maroon-Team/tree/develop}
+
+This repository contains:
+\begin{enumerate}
+\item All work done by team members.
+\item \href{https://github.com/josephbondjobo/COS301-Maroon-Team/blob/develop/Intro/Contributors.md}{CONTRIBUTORS.md} file outlining which members where involved in which phases of the project.
+\end{enumerate}
+
+
+
+\newpage
+\clearpage
+\addcontentsline{toc}{section}{References}
 
 \end{document}
