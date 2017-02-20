@@ -146,9 +146,35 @@
 			\item Access to Tuks Network \\
 			Without sufficient access to the wireless network we will be unable to implement the WiFi navigation system which is crucial to indoor navigation.
 		\end{enumerate}
-\section{Specific Acquirements}
+		
+	\section{Specific Acquirements}
+This section gives a detailed description of the system requirements. It describes all the functional as well as the quality requirements of the system.
 
 	\subsection{External Interface Requirements}
+This section provides a detailed description of the system interfaces,user interfaces, hardware interfaces, software interfaces and communications interfaces. It also provides a description of the inputs and outputs for each of the interfaces.
+                 \subsubsection{User Interfaces}
+The system will consist of both an Android-based and iOS-based(Xcode) interface which will allow system users to interact with the system. These interfaces will be used to enter different types of information into the sytem regarding venues,points of interest, events and activities.\\ There will also be provisions for text inputs and push buttons which will allow the users to search for locations and save locations. Graphics will be used to provide a visual representation of the directions to a location as well as information on events taking place on a particular date.
+             
+\begin{enumerate}  
+                     \item \textbf{User Inputs}
+        The application will receive user inputs through the user interface. The interface will provide both the keywords to use for locations searching and the information on venues, events and activities to be stored in the database.
+                      \item \textbf{Navigator}
+                     The application will determine your current location  and show a map depicting the optimal route to the point of interest by accessing the GPS system.
+
+                      \item \textbf{Calendar}
+                  The application will include a calendar which will show all the events on the corresponding dates.
+
+
+\end{enumerate}
+                 \subsubsection{Hardware Interfaces}
+The application will run on an Android mobile device as well as on an iOS mobile device.All hardware interfacing and all connections to the database server will be handled by the operating systems on the mobile device and web server. In case of using the wireless network adapter or GPS, this will be managed by the respective applications in the mobile device.
+
+                 \subsubsection{Software Interfaces}
+The application will run on the Android operating system, specifically version 4.0. and upwards.It will also run on iOS operating system version 7.3 and above.
+
+                 \subsubsection{Communications Interfaces}
+The application will communicate with the different parts of the system via API function calls.The exact formats and protocols for incoming and outgoing messages should be abstracted by the APIs.
+
 	\subsection{Functional Requirements}
 		\subsubsection{Use case prioritization} 
  
@@ -250,7 +276,14 @@
 		\end{itemize} 
 
 \end{enumerate} 
+	
 	\subsection{Performance Requirements}
+   This section describes all the performance related capabilities of the system.
+               \subsubsection{Real-Time Information}
+  The application will provide information that is up-to-date at all times. The system user will be notified should any delays occur. 
+               \subsubsection{System Resource Management}
+   The application should not consume system resources such that the mobile device becomes unusable. There should be provision for the application to work in the background should the user wish to use other applications.
+   
 	\subsection{Design Constraints}
 		\begin{enumerate}
 		\item 	User Movement \\
