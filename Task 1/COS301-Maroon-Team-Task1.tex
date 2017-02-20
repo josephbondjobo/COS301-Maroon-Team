@@ -229,6 +229,19 @@ Flexibility is important for any system. A non-flexible system is restricted to 
 	\item Modules should be decoupled from one another, allowing the system to be extensible without a break in service which is achieved by integrating new modules and swapping out existing ones. 
 	\end{itemize}
 \end{enumerate}
+\subsubsubsection{Maintainability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The system is to be designed in such a way that it is easily updated, modified or extended by the client in the future. In order to achieve these requirements, design patterns and best practices such as coding style guides are normally used to ensure uniformity and modularity across the system.
+\item \textbf{Justification} \\
+Many systems require regular changes, not because they were poorly designed or implemented, but because of changes in external factors.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item All code should be documented in the applicable language documentation framework, such as JavaDocs for a Java based system, etc.
+		\item A coding style guide/manual should be set up and associated with the project, such that all developers use similar coding styles and conventions, to allow for more readable code that is easier to maintain.
+		\item System should be separated in distinct, concise and independent modules relating to separate concerns, to allow for easier maintenance.
+	\end{itemize}
+\end{enumerate}
 
 \clearpage
 \section{Open Issues}
