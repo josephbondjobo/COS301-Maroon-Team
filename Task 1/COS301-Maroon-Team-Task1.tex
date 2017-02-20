@@ -174,6 +174,141 @@ Couchbase Mobile which consists of:
 	\end{itemize}
 
 \end{enumerate}
+\subsubsection{Quality requirements}
+\begin{itemize}
+\item \textbf {Performance}
+\begin{enumerate}
+\item \textbf{Description} \\
+Application performance can be defined as the amount of work that can be accomplished by an application in question in a measured time interval. The time interval is normally measured in seconds, where the amount of work can be defined as the throughput, latency or data transmission time.
+	\begin{itemize}
+		\item \textbf{Throughput} \\
+		The number of requests and responses which can be processed by the system in a given time interval for example the time the application takes to locate its user on the map using wifi access points and gps.
+		\item \textbf{Latency and Data transmission time} \\
+		A time interval measured as the time it takes to service a request such as to find the best route or path to guide the user to a certain destination. 
+	\end{itemize}
+	
+	The aim for this system, is to increase the throughput and decrease the latency. As the developer has no control over the network medium used, he/she must aim for a minimal request and response payload as to decrease the data transmission time.
+\item \textbf{Justification} \\
+Our aim for this system is to increase throughput, decrease latency and data transmission time. This will ensure we have a system that is responsive at all times, including peak times and delivers an excellent user experience.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item Function calls must be timed and benchmarked and this data should be logged.
+		\item Network responses should be cached on server side to lighten the load on the device.
+		\end{itemize}
+\end{enumerate}
+\item \textbf {Reliability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The designed system needs to be accessible from both inside and outside builinds at the University of Pretoria campuses as well as from other networks, especially on other campuses on the TENET network. The system should be reliable in its accessibility.
+\item \textbf{Justification} \\ 
+The system must not be unreliable in that it crashes under large workloads for example when many users are actually using the application and some users get denied service during work critical times when workloads are high. This causes a detriment in user productivity. To ensure that the system can be used confidently as a tool to increase productivity and ease the work process, the development aim must be for the system to be as reliable and accessible as possible.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item To enable access of data from the Android app even when offline such as preferences, events, etc..
+		\item Hot swapping of system modules should not affect system service reliability.
+	\end{itemize}
+\end{enumerate}
+\item \textbf {Scalability}
+\begin{enumerate}
+\item \textbf{Description} \\
+Scalability refers to the application in question's ability to handle an above normal workload for exemple when many users are currently using the app as it must provide and visualise information related to pedestrian traffic on campus for example in the form of heat maps of user locations.
+\item \textbf{Justification} \\
+The system needs Scalability because it needs to support many users at the same time.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item The system should be able to handle the growing amount of data or number of users using the app at the same time.
+	\end{itemize}
+\end{enumerate}
+\item \textbf {Security}
+\begin{enumerate}
+\item \textbf{Description} \\
+Security in application software refers to authentication, authorization, data security and accounting. Authentication refers to the systems' ability to provide a way of identifying a user, normally with our system it will identify its users anonymously from the device name.
+\item \textbf{Justification} \\
+Security is a important aspect of any software product. In terms of information security, we are concerned about integrity, availability, confidentiality and non-repudiation in that order. 
+
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item System should be resistant hacking as some people could use it to steal some personal information on the device about the user.
+	\end{itemize}
+\end{enumerate}
+
+\item \textbf {Flexibility}
+\begin{enumerate}
+\item \textbf{Description} \\
+Flexibility refers to the ability of the system to be changed dynamically either by hot swapping certain components in a live system or by extending the system with some kind of plugin for example if there are some new building added on campus it should able to be updated or extended on the data the device has. 
+\item \textbf{Justification} \\
+Flexibility is important for any system. A non-flexible system is restricted to using technologies that were hard coded into it, and this necessitates, at best, large scale refactoring every time an upgrade is available since new technologies need to be reintegrated, makes adding new features tedious, and risks the system becoming archaic. A flexible system requires minimum effort to upgrade and expand, allowing for the system to easily grow in usefulness and function beyond the original vision.
+\item \textbf{Requirements}
+	\begin{itemize}
+	\item Modules should be decoupled from one another, allowing the system to be extensible without a break in service which is achieved by integrating new modules and swapping out existing ones. 
+	\end{itemize}
+\end{enumerate}
+\item \textbf {Maintainability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The system is to be designed in such a way that it is easily updated, modified or extended by the client in the future. In order to achieve these requirements, design patterns and best practices such as coding style guides are normally used to ensure uniformity and modularity across the system.
+\item \textbf{Justification} \\
+Many systems require regular changes, not because they were poorly designed or implemented, but because of changes in external factors.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item All code should be documented in the applicable language documentation framework, such as JavaDocs for a Java based system, etc.
+		\item A coding style guide/manual should be set up and associated with the project, such that all developers use similar coding styles and conventions, to allow for more readable code that is easier to maintain.
+		\item System should be separated in distinct, concise and independent modules relating to separate concerns, to allow for easier maintenance.
+	\end{itemize}
+\end{enumerate}
+\item \textbf {Auditability/Monitorability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The system is to be designed to be verbose and transparent in its workings, and to ensure maximum data security, to allow role players to have insights into how the system is used and how it may be improved. These requirements are achieved by making the maximum amount of relevant data available to its users and by enforcing strict constraints on the data that is stored. 
+\item \textbf{Justification} \\
+This is an important process in Software Engineering, where all the informations must be correct so requiring all the developers to see who made changes and when so that consistency must be kept in order to keep the system's data accurate and reliable.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item Data in the app should always be consistent. This implies that all data should adhere to constraints placed on the data by the data model, such as regex patterns, minimum and maximum length, non nullable fields, etc.
+	\end{itemize}
+\end{enumerate}
+
+\item \textbf {Integrability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The system should allow for future external integration with other platforms such as security authentication providers, different map database to be loaded, etc.
+\item \textbf{Justification} \\
+The system necessitates integrability to allow for maximum usability, as the integrability of the system is directly related to how usable it is. To be usable, the system must allow for easy migration, not just from previous systems, but also to future systems and future data storage mediums. The usability is also largely determined by how well the back-end system integrates with front end clients, and which clients are supported.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item The system should allow technology neutral importing and exporting of data.
+		\item The back-end system should integrate with an Android mobile app clients.
+		\item The system should be able to integrate with different back-end authentication services.
+	\end{itemize}
+\end{enumerate}
+\item \textbf {Cost}
+\begin{enumerate}
+\item \textbf{Description} \\
+The cost of the system entails any initial expenses as well as any ongoing expenses which the client may incur at some point. Such expenses arise from software licenses, external computing resources required as well as future maintenance of the system in terms of time.
+\item \textbf{Justification} \\
+The expenses made and software licenses cost must be taken into account in order to set the price of the software.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item System should be cheap to operate, maintain and extend. If the quality and maturity of technologies available allow it then the technologies used must be freely available/usable.
+		\item As far as possible, open source compatible, mature technologies should be used, to ensure system stability and deployment on different OS as far as possible.
+	\end{itemize}
+\end{enumerate}
+\item \textbf {Usability}
+\begin{enumerate}
+\item \textbf{Description} \\
+Usability refers to ease with which humans, and to a lesser extent, servers interact with the system in question. Usability can be measured in various ways such as using quantifiable scientific measures or more subjective measures with a key question point being if the API follows conventions and so on.
+\item \textbf{Justification} \\
+It is important that the new system is usable as it is a user-centric system. Ensuring that the system is usable will ensure that users are provided accurate and correct information from the system which will for better performance and departmental strategic planning. As this system will also be used by parties outside of the University of Pretoria, it is important that the system conveys a professional image, as this will reflect on the image of the University of Pretoria. 
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item Mobile devices running Android 4.0. and upwards should be fully supported.
+		\item Material design UI guidelines prescribed by Google must be used, to ensure that the clients feel modern and familiar. 
+		\item Android app should support the full back-end API specifications.
+		\item The user must be allowed to elect whether they would like their data to be available offline.
+		\item Mobile client users should be able choose between working on Wi-Fi  or network data. 
+	\end{itemize}
+\end{enumerate}
+\end{itemize}
 	
 
 \clearpage
