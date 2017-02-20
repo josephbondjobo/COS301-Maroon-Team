@@ -242,6 +242,31 @@ Many systems require regular changes, not because they were poorly designed or i
 		\item System should be separated in distinct, concise and independent modules relating to separate concerns, to allow for easier maintenance.
 	\end{itemize}
 \end{enumerate}
+\subsubsubsection{Auditability/Monitorability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The system is to be designed to be verbose and transparent in its workings, and to ensure maximum data security, to allow role players to have insights into how the system is used and how it may be improved. These requirements are achieved by making the maximum amount of relevant data available to its users and by enforcing strict constraints on the data that is stored. 
+\item \textbf{Justification} \\
+This is an important process in Software Engineering, where all the informations must be correct so requiring all the developers to see who made changes and when so that consistency must be kept in order to keep the system's data accurate and reliable.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item Data in the app should always be consistent. This implies that all data should adhere to constraints placed on the data by the data model, such as regex patterns, minimum and maximum length, non nullable fields, etc.
+	\end{itemize}
+\end{enumerate}
+
+\subsubsubsection{Integrability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The system should allow for future external integration with other platforms such as security authentication providers, different map database to be loaded, etc.
+\item \textbf{Justification} \\
+The system necessitates integrability to allow for maximum usability, as the integrability of the system is directly related to how usable it is. To be usable, the system must allow for easy migration, not just from previous systems, but also to future systems and future data storage mediums. The usability is also largely determined by how well the back-end system integrates with front end clients, and which clients are supported.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item The system should allow technology neutral importing and exporting of data.
+		\item The back-end system should integrate with an Android mobile app clients.
+		\item The system should be able to integrate with different back-end authentication services.
+	\end{itemize}
+\end{enumerate}
 
 \clearpage
 \section{Open Issues}
