@@ -163,7 +163,7 @@
 	}
 	\subsection{Other Requirements}
 	\subsubsection{Quality requirements}
-	\subsubsection{Performance}
+	\subsubsubsection{Performance}
 	\begin{enumerate}
 	\item \textbf{Description} \\
 	Application performance can be defined as the amount of work that can be accomplished by an application in question in a measured time interval. The time interval is normally measured in seconds, where the amount of work can be defined as the throughput, latency or data transmission time.
@@ -183,6 +183,18 @@
 			\item Network responses should be cached on server side to lighten the load on the device.
 			\end{itemize}
 	\end{enumerate}
+	\subsubsubsection{Reliability}
+\begin{enumerate}
+\item \textbf{Description} \\
+The designed system needs to be accessible from both inside and outside builinds at the University of Pretoria campuses as well as from other networks, especially on other campuses on the TENET network. The system should be reliable in its accessibility.
+\item \textbf{Justification} \\ 
+The system must not be unreliable in that it crashes under large workloads for example when many users are actually using the application and some users get denied service during work critical times when workloads are high. This causes a detriment in user productivity. To ensure that the system can be used confidently as a tool to increase productivity and ease the work process, the development aim must be for the system to be as reliable and accessible as possible.
+\item \textbf{Requirements}
+	\begin{itemize}
+		\item To enable access of data from the Android app even when offline such as preferences, events, etc..
+		\item Hot swapping of system modules should not affect system service reliability.
+	\end{itemize}
+\end{enumerate}
 
 \clearpage
 \section{Open Issues}
