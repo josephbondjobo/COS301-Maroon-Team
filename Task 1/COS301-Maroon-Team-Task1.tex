@@ -162,6 +162,27 @@
 	
 	}
 	\subsection{Other Requirements}
+	\subsubsection{Quality requirements}
+	\subsubsection{Performance}
+	\begin{enumerate}
+	\item \textbf{Description} \\
+	Application performance can be defined as the amount of work that can be accomplished by an application in question in a measured time interval. The time interval is normally measured in seconds, where the amount of work can be defined as the throughput, latency or data transmission time.
+		\begin{itemize}
+			\item \textbf{Throughput} \\
+			The number of requests and responses which can be processed by the system in a given time interval for example the time the application takes to locate its user on the map using wifi access points and gps.
+			\item \textbf{Latency and Data transmission time} \\
+			A time interval measured as the time it takes to service a request such as to find the best route or path to guide the user to a certain destination. 
+		\end{itemize}
+
+		The aim for this system, is to increase the throughput and decrease the latency. As the developer has no control over the network medium used, he/she must aim for a minimal request and response payload as to decrease the data transmission time.
+	\item \textbf{Justification} \\
+	Our aim for this system is to increase throughput, decrease latency and data transmission time. This will ensure we have a system that is responsive at all times, including peak times and delivers an excellent user experience.
+	\item \textbf{Requirements}
+		\begin{itemize}
+			\item Function calls must be timed and benchmarked and this data should be logged.
+			\item Network responses should be cached on server side to lighten the load on the device.
+			\end{itemize}
+	\end{enumerate}
 
 \clearpage
 \section{Open Issues}
