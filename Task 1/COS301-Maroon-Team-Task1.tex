@@ -446,6 +446,113 @@ It is important that the new system is usable as it is a user-centric system. En
 		\caption{Traceability Matrix}
 		\end{figure}
 \item \textbf{Actor-System Diagrams}
+The actor-system diagrams are diagrams that model how the system interacts with the actors to carry out the use cases.\\ 
+\begin{table}[h!]
+\centering
+\begin {tabular}{ |p{6cm}||p{6cm}|}
+\hline
+\multicolumn{2}{|c|}{USE CASE 1: Find Location }\\
+\hline
+Actor: Client&System: NavUP\\
+\hline
+&0. The NavUP displays the main menu\\
+1. The Client clicks the Find Location button on the main menu &2. The system displays all the Client location information as well as an Exit button\\
+3. The Client clicks the Exit button &4.The system closes the Client location information page and displays the main menu\\
+\hline
+\end {tabular}
+\caption{Actor-System Interaction for Use case: Find Location} 
+\end {table}
+
+\begin{table}[h!]
+\centering
+\begin {tabular}{ |p{6cm}||p{6cm}|}
+\hline
+\multicolumn{2}{|c|}{USE CASE 2: Find Destination }\\
+\hline
+Actor: Client&System: NavUP\\
+\hline
+&0. The NavUP displays the main menu\\
+1. The Client clicks the Find Destination button on the main menu &2. The system displays an input text box for entering the destination\\
+3. The Client enters the destination he wishes to find in the input textbox and clicks Submit button &4. The system displays all destination information as well as an Exit button\\
+5. The Client clicks the Exit button &6. The system closes the page showing all destination information and displays the main menu\\
+\hline
+\end {tabular}
+\caption{Actor-System Interaction for Use case: Find Destination} 
+\end {table}
+
+
+\begin{table}[h!]
+\centering
+\begin {tabular}{ |p{6cm}||p{6cm}|}
+\hline
+\multicolumn{2}{|c|}{USE CASE 3: View Map }\\
+\hline
+Actor: Client&System: NavUP\\
+\hline
+&0. The NavUP displays the main menu\\
+1. The Client clicks the View Map button on the main menu &2. The system displays an input text box for entering the point of interest\\
+3. The Client enters the point of interest  he wishes to view in the input text box and clicks Submit button &4. The system displays a map showing the location of the point of interest as well as an Exit Button\\
+5. The Client clicks the Exit button &6. The system closes the page showing the point of interest map and displays the main menu\\
+\hline
+\end {tabular}
+\caption{Actor-System Interaction for Use case: View Map} 
+\end {table}
+ 
+ 
+\begin{table}[h!]
+\centering
+\begin {tabular}{ |p{6cm}||p{6cm}|}
+\hline
+\multicolumn{2}{|c|}{USE CASE 4: Find Shortest Route }\\
+\hline
+Actor: Client&System: NavUP\\
+\hline
+&0. The NavUP displays the main menu\\
+1. The Client clicks the Shortest Route button on the main menu &2. The system determines clients current location and displays an input text box for entering the point of interest\\
+3. The Client enters the point of interest he wishes to navigate to and clicks Submit button &4. The system displays a map showing the shortest route to the point of interest from his current location as well as an Exit Button\\
+5. The Client clicks the Exit button &6. The system closes the page showing the shortest route map and displays the main menu\\
+\hline
+\end {tabular}
+\caption{Actor-System Interaction for Use case:  Find Shortest Route} 
+\end {table}
+
+\begin{table}[h!]
+\centering
+\begin {tabular}{ |p{6cm}||p{6cm}|}
+\hline
+\multicolumn{2}{|c|}{USE CASE 5: Save Route }\\
+\hline
+Actor: Client&System: NavUP\\
+\hline
+&0. The NavUP displays the main menu\\
+1. The Client clicks the Save Route button on the main menu &2. The system determines clients current location and displays an input text box for entering the point of interest\\
+3. The Client enters the point of interest he wishes to navigate to and clicks Submit button &4. The system displays a map showing the route to the point of interest from his current location as well as an Save Route Button\\
+5. The Client clicks the Save Route button &6. The system requests the client to provide a name for the file containing route information\\
+7. The Client enters file name and clicks Submit button &8. The system saves the file in a default location and displays the Exit button\\
+9. The Client clicks the Exit button &10. The system displays the main menu\\
+\hline
+\end {tabular}
+\caption{Actor-System Interaction for Use case:  Save Route} 
+\end {table}
+
+\begin{table}[h!]
+\centering
+\begin {tabular}{ |p{6cm}||p{6cm}|}
+\hline
+\multicolumn{2}{|c|}{USE CASE 6: View and Utilize Heat Map }\\
+\hline
+Actor: Client&System: NavUP\\
+\hline
+&0. The NavUP displays the main menu\\
+1. The Client clicks the View and Utilize Heat Map button on the main menu &2. The system determines the clients current location and displays a heat map of his current location as well as an Exit button\\
+3. The Client clicks the Exit button &4. The system closes the page showing the heat map and displays the main menu\\
+\hline
+\end {tabular}
+\caption{Actor-System Interaction for Use case: View and Utilize Heat Map} 
+\end {table}
+
+
+
 \end{enumerate} 
 
 \clearpage
