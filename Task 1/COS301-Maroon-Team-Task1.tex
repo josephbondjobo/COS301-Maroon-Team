@@ -75,34 +75,44 @@
 \section{Introduction}
 
 	\subsection{Purpose} 	
+		The purpose of the System Requirements Specification is to give an overview and understanding of the system we are planning to implement. It is created to give the client an overview of what we plan to implement and what resources and requirements it will need. 
 	\subsection{Scope} 
-	\subsection{Overview} 
+	\begin{enumerate}
+	\item Name: \\ 
+	NavUP
+	
+	\item Purpose: \\
+	A navigation system that will help students, faculty and guests navigate their way around the University of Pretoria's Hatfield campus in the most efficient way possible.
+	
+	\item Objectives, goals and benefits: \\
+	The objective of NavUP is to create a functioning navigation system that can easily take users to exact lecture halls and other locations around the Hatfield campus.\\ The goal of this system is to make it easier for new students and guests to find their way around the campus as well as make it easier to avoid human traffic when travelling to lectures or other locations.\\ The benefits of NavUP will be efficiency when it comes to new students and guests travelling to new lecture halls, helping users get to locations on time and making it a less stressful experience for new students trying to find their way around campus for the first time.  
+	\end{enumerate}
 
 \section{Overall Description}
 
 	\subsection{Product Perspective}
 	
 		\subsubsection{System Interfaces}
-			Each component and system/subsystem in the overall program will need its own interface between its own\\				software and the bigger program. For instance, the crowd sourcing routines must be able to record and report a\\			density map to the main branch of the program that must then be able to be accessed and utilized by an analyser\\			which must then return it to the main branch to be retrieved as needed for navigation by the user.\\
+			Each component and system/subsystem in the overall program will need its own interface between its own				software and the bigger program. For instance, the crowd sourcing routines must be able to record and report a			density map to the main branch of the program that must then be able to be accessed and utilized by an analyser			which must then return it to the main branch to be retrieved as needed for navigation by the user.
 		\subsubsection{User Interfaces}
-			The user interface must consist of an easily understandable and navigable GUI, simple enough for even the\\				most inexperienced to use. The different options and account information must be visible and responsive and the\\			navigation component must be clear and accurate. The user should intuitively know how to get from any point to\\			any other point in the program.\\
+			The user interface must consist of an easily understandable and navigable GUI, simple enough for even the				most inexperienced to use. The different options and account information must be visible and responsive and the			navigation component must be clear and accurate. The user should intuitively know how to get from any point to			any other point in the program.
 		\subsubsection{Hardware Interfaces}
-			The hardware interface must allow the program to access and utilize systems on the device on which the program\\			is running, specifically the GPS system if the program uses it, the wireless network adapter to check for Wi-Fi\\			routers and signal strength, the screen to display information and the device used to make selections. The\\				hardware interface will be the backbone of the program, allowing directions and instructions to be communicated\\			to the user.\\
+			The hardware interface must allow the program to access and utilize systems on the device on which the program			is running, specifically the GPS system if the program uses it, the wireless network adapter to check for Wi-Fi			routers and signal strength, the screen to display information and the device used to make selections. The				hardware interface will be the backbone of the program, allowing directions and instructions to be communicated			to the user.
 		\subsubsection{Software Interfaces}
-			The routines by which the program will be able to call, run and interpret other software on the device being\\				used to run the program. The routines will, for example, utilize the software responsible for managing the\\ 				connection between the device and the Wi-Fi routers. This will co-exist with the hardware interface to make use\\			of the hardware on the device for the program.\\
+			The routines by which the program will be able to call, run and interpret other software on the device being				used to run the program. The routines will, for example, utilize the software responsible for managing the 				connection between the device and the Wi-Fi routers. This will co-exist with the hardware interface to make use			of the hardware on the device for the program.
 		\subsubsection{Communications Interfaces}
-			The communications interface will most likely be used to connect devices being used to run the program to\\				other devices being used to run the program. One of the uses for this will be in crowd sourcing density data of\\			the users to help effectively and intelligently create the most efficient instructions for a specific user or to\\			record and utilize the most common trends in user movements to predict behaviour and increase efficiency.\\
+			The communications interface will most likely be used to connect devices being used to run the program to				other devices being used to run the program. One of the uses for this will be in crowd sourcing density data of			the users to help effectively and intelligently create the most efficient instructions for a specific user or to		record and utilize the most common trends in user movements to predict behaviour and increase efficiency.
 		\subsubsection{Memory}
-			Information such as maps, router positions and user identities will most likely need to be stored on a server\\ 			by the program administrators. Information gathered about the users, such as common routes, time spent using\\ 				the program, user information and any other data collected by the program should also be stored in the same\\ 				way.However, an alternative would be to store the information on the user's device and report it to the server\\ 			when needed.\\   
+			Information such as maps, router positions and user identities will most likely need to be stored on a server 			by the program administrators. Information gathered about the users, such as common routes, time spent using 				the program, user information and any other data collected by the program should also be stored in the same 				way.However, an alternative would be to store the information on the user's device and report it to the server 			when needed.   
 		\subsubsection{Operations}
-			The primary operation of the program will be directing students around the University of Pretoria's main\\				campus, secondary operations may include crowd sourcing utilities and a rewards program. It should be possible\\			to store and retrieve information about a user's movements in order to back trace if necessary.\\
+			The primary operation of the program will be directing students around the University of Pretoria's main				campus, secondary operations may include crowd sourcing utilities and a rewards program. It should be possible			to store and retrieve information about a user's movements in order to back trace if necessary.
 		\subsubsection{Site Adaptation Requirements}
-			The program should be available in a variety of language options.\\
+			The program should be available in a variety of language options.
 		
 	\subsection{Product Functions}
 		\begin{enumerate}
 			\item Basic Functionality\\
-			NavUp has basic functionality that allows the user's current location to be determined indoors and outdoors. The user can further search for a location, save a location, navigate to a location and see the route in 3D. Zoom in or out capability is also available. Location markers  are there to help the user differentiate their starting point, destination as well as other locations. The application can also generate an time estimate that the user may take to get to their destination.
+			NavUP has basic functionality that allows the user's current location to be determined indoors and outdoors. The user can further search for a location, save a location, navigate to a location and see the route in 3D. Zoom in or out capability is also available. Location markers  are there to help the user differentiate their starting point, destination as well as other locations. The application can also generate an time estimate that the user may take to get to their destination.
 			
 			\item Surveillance\\
 			Through surveillance, NavUP is able to provide and visualise pedestrian traffic information on campus and further provide an alternative route if one is available to avoid pedestrian traffic. Another capability that can be achieved is to record the user's number of steps which can be used by the user to track their movement for fitness or leisure or by a third party to run competitions.
@@ -112,7 +122,7 @@
 		\end{enumerate}				
 					
 	\subsection{User Characteristics}
-		The application NavUp can expect to have three types of users; the registered student or staff member, the guest and the administrator.
+		The application NavUP can expect to have three types of users; the registered student or staff member, the guest and the administrator.
 		\begin{enumerate}
 		\item The registered student or staff member and guest user are expected to be able to provide a destination location in terms of name of the building or faculty and room.
 		
@@ -120,7 +130,7 @@
 		
 		\item The guest will have limited functionality; hence will only be able to navigate from place to place.
 		
-		\item The administrator must be able to set goals and provide information regarding competitions to be facilitated through NavUp. This entails the award giving process either for attendance of an event or achieving the set number of steps.
+		\item The administrator must be able to set goals and provide information regarding competitions to be facilitated through NavUP. This entails the award giving process either for attendance of an event or achieving the set number of steps.
 		\end{enumerate}
 	\subsection{Constraints}
 	As with any big project, there are a lot of constraints that need to be taken into account when developing the application.
@@ -201,7 +211,7 @@ The application will communicate with the different parts of the system via API 
 	\subsubsection{Actor-system interaction}
 	\subsubsection{Traccability}
 
-\end{enumerate} 
+
 	
 	\subsection{Performance Requirements}
    This section describes all the performance related capabilities of the system.
